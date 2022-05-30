@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 84 - tag area</title>
+</head>
+<body>
+    <!--
+        a tag map define as areas clicaveis em um mapa
+        esta tag deve ser sempre filha de uma tag map
+
+        atributos
+
+        alt - define um texto alternativo para a imagem
+        coords - define as coordenadas da area
+        download - usado para forçar o download do destino do link
+        href - define qual o endereço do link de destino
+        hreflang - define qual a linguagem do link de destino
+        media - define qual a midia ou dispositivo do link de destino
+        rel - define qual a relação do docuemnto atual e o de destino
+        shape - define uma forma para a area
+        target - define onde o link deverá ser aberto 
+        type - define o tipo de mídia do link de destino
+        
+    -->
+
+    <img src="images/logo.png" alt="Logo da Hcode" usemap="#mapa-logo">
+
+    <map name="mapa-logo">
+        <area shape="circle" coords="211,263,15" href="https://hcode.com.br" alt="Olho Esquerdo">
+        <area shape="circle" coords="301,263,15" href="https://hcode.com.br" alt="Olho Direito">
+
+        <area shape="rect" coords="0,0,20,20" href="https://githube.com.br" alt="Olho Direito">
+    </map>
+    
+</body>
+</html>

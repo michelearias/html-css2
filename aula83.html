@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 83 - tag map</title>
+</head>
+<body>
+    <!--
+        tag usada para criar um mapa de imagem clicável
+        o atributo name é obrigatório para relacionar com a tag img
+        a tag map define as areas clicaveis usando varias tags areas
+
+        name - define um nome para relacionar com o atributo usemap da tag img (nome do mapa)
+    -->
+
+    <img src="images/logo.png" alt="Logo da Hcode" usemap="#mapa">
+
+    <map name="mapa-logo">
+        <area shape="circle" coords="211,263,15" href="https://hcode.com.br" alt="Olho Esquerdo">
+        <area shape="circle" coords="301,263,15" href="https://hcode.com.br" alt="Olho Direito">
+    </map>
+    
+</body>
+</html>
